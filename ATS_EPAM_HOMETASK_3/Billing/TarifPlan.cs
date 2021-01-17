@@ -3,15 +3,10 @@
 
 namespace ATS_EPAM_HOMETASK_3.Billing
 {
-    class TariffPlan
+    public static class TariffPlan
     {
-        public double CostPerMinute { get; set; }
-        public string NameTariff { get; set; }
+        public static double CostPerMinute { get; set; } = 1;
+        public static string NameTariff { get; set; } = "Super";
 
-        public TariffPlan(double costPerMinute, string nameTariff)
-        {
-            CostPerMinute = costPerMinute;
-            NameTariff = nameTariff;
-        }
     }
 }
